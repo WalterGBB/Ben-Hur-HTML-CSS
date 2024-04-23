@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #fff79d 0%, #eccf5e 50%, #8a6800 100%); 
+    padding-bottom: 70px;
+}
+
+header{
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Lilita One", sans-serif;
+}
+
+h1{
+    margin: 15px auto 7px auto;
+    text-align: center;
+    font-size: 3em;
+    color: #fffffff0;
+    text-shadow: -5px -3px 3px #ffa930, -10px -6px 3px #713e04;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 0 3vw;
+    height: 4vh;
+}
+
+nav ul li a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fffffff0;
+    text-shadow: -2px -1px 3px #ffa930, -4px -2px 3px #713e04;
+}
+
+nav ul li a:not(.active):hover{
+    font-size: 1.6em;
+    text-shadow: -2px -1px 3px #ffc16a, -4px -2px 3px #ece6df;
+}
+
+a.active{
+    font-size: 1.6em;
+    color: black;
+    text-shadow: -2px -1px 3px #ffc16a, 2px 1px 3px #ffc16a, -4px -2px 3px #ece6df, 4px 2px 3px #ece6df;
+}
+
+h2{
+    margin: 0;
+    padding: 2vh 1vw;
+    color: #613e01;
+    border-bottom: 2px solid rgb(255, 162, 0);
+}
+
+.container{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 2vw;
+}
+
+.container img:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+h3{
+    color: #fffffff0;
+    text-shadow: -2px -1px 3px #ffa930, -4px -2px 3px #713e04;
+}
+
+h3.trama{
+    margin-bottom: 10px;
+}
+
+.containerTrama{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.containerTrama p{
+    margin-top: 0;
+}
+
+.imagePoster{
+    height: 512px;
+    margin-left: 20px;
+}
+
+h3.elenco{
+    text-align: center;
+    border-top: 2px solid #613e01;
+    padding-top: 20px;
+}
+
+.containerElenco{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #613e01;
+    padding-bottom: 10px;
+}
+
+.containerElenco img{
+    height: 400px;
+    width: 310px;
+}
+
+.containerElenco p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+h3.trascendencia{
+    text-align: right;
+}
+
+.containerTrascendencia p{
+    margin-top: 0;
+}
+
+.imageTrascendencia{
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-right: 15px;
+}
+
+@media (max-width:680px){
+
+    .containerElenco{
+        justify-content: space-evenly;
+    }
+
+    .personaje{
+        text-align: center;
+    }
+
+    .containerElenco img{
+        height: 200px;
+        width: 110px;
+    }
+}
+
+@media (max-width:1050px){
+    
+    .containerTrama{
+        display: block;
+    }
+
+    .imagePoster{
+        float: right;
+        width: 35%;
+        height: auto;
+    }
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 10vh;
+    font-family: "Lilita One", sans-serif;
+    color: #fffffff0;
+    font-size: 1.3em;
+    text-shadow: -2px -1px 3px #ffa930, -4px -2px 3px #713e04;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+

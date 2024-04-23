@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Walter Gianfranco Becerra Barrantes">
+    <meta name="description" content="Sitio web para fanáticos de la película Ben Hur">
+    <meta name="keywords" content="Ben Hur, Películas, Roma, Judea, Jerusalén, Coliseo Romano, Charlton Heston">
+    <link rel="stylesheet" href="/CSS/contacto.css">
+    <link rel="shortcut icon" href="/assets/img/icon-horse.png" type="image/x-ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <title>BEN-HUR</title>
+</head>
+
+<body>
+    <header>
+        <h1>BEN HUR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Historia</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="premios.html">Premios</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Te gustaría compartir tu reseña sobre el clásico del cine?</h2>
+    <div class="container">
+        <div class="containerJr">
+            <img class="img-derecha" src="/assets/img/ben-hur.jpg" alt="messala">
+        </div>
+        <div class="containerJr">
+            <form action="">
+                <h3>Déjanos saber tu opinión :D</h3>
+                <div class="entrada">
+                    <label for="nombres">Nombre(s): </label>
+                    <input type="text" required>
+                </div>
+                <div class="entrada">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" required>
+                </div>
+                <div class="entrada">
+                    <label for="genero">Género: </label>
+                    <input type="radio" name="genero" value="masculino" checked> <i>Masculino</i>
+                    <input type="radio" name="genero" value="femenino"> <i>Femenino</i>
+                </div>
+                <div class="entrada">
+                    <label for="edad">Edad: </label>
+                    <input type="number" max="120" min="5">
+                </div>
+                <div class="entrada">
+                    <label for="correo">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="entrada">
+                    <label for="continente">Continente: </label>
+                    <select name="continente" id="continente">
+                        <option value="africa">África</option>
+                        <option value="america" selected>América</option>
+                        <option value="africa">Ántártida</option>
+                        <option value="asia">Asia</option>
+                        <option value="europa">Europa</option>
+                        <option value="oceania">Oceanía</option>
+                    </select>
+                </div>
+                <div class="entrada" style="height: 145px; display: flex; align-items: flex-start">
+                    <label for="reseña">Reseña: </label>
+                    <textarea name="reseña" id="reseña" style="height: 140px; width: 250px; margin-left: 5px;"
+                        placeholder="Ingresa tu reseña aquí"></textarea>
+                </div>
+                <div class="enviar" style="padding-bottom: 70px;">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <div class="containerJr">
+            <img class="img-izquierda" src="/assets/img/messala.jpg" alt="messala">
+        </div>
+    </div>
+    <footer>
+        All rights reserved &copy; WazTerBel - 2024
+    </footer>
+</body>
+
+</html>
